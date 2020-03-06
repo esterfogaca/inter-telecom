@@ -1,0 +1,11 @@
+.card {
+    cursor: pointer;
+    
+    min-height: 40vh;
+
+    background-size: cover;
+    background-position: center;
+
+    border: .0625rem solid rgb(249, 245, 228);
+    box-shadow: 0 .3125rem .3125rem gray;
+}
