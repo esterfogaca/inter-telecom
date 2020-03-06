@@ -1,0 +1,14 @@
+.categories {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.categories__item {
+    cursor: pointer;
+}
+
+.categories__item:hover {
+    color: blue;
+}
