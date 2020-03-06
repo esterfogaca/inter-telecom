@@ -3,6 +3,7 @@ import CardList from './components/CardList';
 import Categories from './components/Categories';
 
 import './App.css';
+import Loading from './components/Loading';
 
 const App = () => {
   const [ data, setData ] = useState(false);
@@ -25,23 +26,25 @@ const App = () => {
     fetchCategories();
   }, []);
 
-  const handleClick = async id => {
+  const handleCategoryClick = async id => {
     const res = await fetch(`https://api.thecatapi.com/v1/images/search?limit=10&category_ids=${id}`);
     const json = await res.json();
     setData(json);
   };
 
+  const handleButtonClick = () => alert('Olá!');
+
   if (data && categories) {
     return (
-      <>
-        <Categories list={categories} handleClick={handleClick} />
-        <CardList src={data} />
-      </>
+      <div className="app">
+        <Categories list={categories} handleClick={handleCategoryClick} />
+        <CardList src={data} handleClick={handleButtonClick} />
+      </div>
     );   
   }
 
   return (
-    <h2>LOADING...</h2>
+    <Loading fullscreen />
   )
      
 };

@@ -1,8 +1,10 @@
 .categories {
-    position: fixed;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     list-style: none;
+    font-size: 2rem;
+    color: rgb(179, 81, 81);
+    font-family: monospace;
 }
 
 .categories__item {
@@ -10,5 +12,13 @@
 }
 
 .categories__item:hover {
-    color: blue;
+    color: rgb(78, 13, 57);
+}
+
+@media screen and (min-width: 720px) {
+    .categories {
+        position: fixed;
+        padding: 5.625rem 5rem .625rem 1.25rem;
+        font-size: 4.65rem;
+    }
 }

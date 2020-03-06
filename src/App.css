@@ -1,6 +1,12 @@
-#app {
+.app {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
 
   padding: 1rem;
+}
+
+@media screen and (min-width: 720px) {
+  .app {
+    grid-template-columns: 1fr 2fr;
+  }
 }

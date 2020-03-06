@@ -1,0 +1,18 @@
+.button {
+    cursor: pointer;
+    place-items: center;
+    background-color: rgb(78, 13, 57);
+    color:#FFFFFF;
+    border: .0625rem solid #707070;
+    box-shadow: 0 .0625rem .375rem #00000029;
+    border-radius: .25rem;
+    min-width: 10rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: all .7s ease;
+}
+
+.button__color:hover {
+    color: rgb(179, 81, 81);
+}

@@ -1,4 +1,12 @@
 .cardlist {
+    text-align: center;
+}
+
+.cardlist .button {
+    margin: 2rem;
+}
+
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;

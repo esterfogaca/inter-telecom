@@ -1,0 +1,8 @@
+.loading {
+    display: grid;
+    place-items: center;
+}
+
+.loading--fullscreen {
+    height: 100vh;
+}
