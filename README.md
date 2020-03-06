@@ -1,4 +1,7 @@
+# Telecom Cats
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+![Project preview](https://media.giphy.com/media/KFnReZaLXBGMDQbpU1/giphy.gif)
 
 ## Available Scripts
 
